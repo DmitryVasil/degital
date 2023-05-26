@@ -32,6 +32,7 @@ html.dark {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -82,6 +83,10 @@ img{
 
 ul {
   list-style-type: none;
+}
+
+.title {
+  margin-bottom: 10px;
 }
 
 .header {
@@ -137,6 +142,10 @@ ul {
   opacity: .5;
 }
 
+.btn-theme {
+  margin-left: 20px;
+}
+
 .section-table {
   margin-top: 10px;
 }
@@ -181,7 +190,8 @@ ul {
 
 .furniture__img {
   display: block;
-  width: 100%;
+  margin: auto;
+  /* width: 100%; */
   object-fit: cover;
   transition: transform .3s;
 }
@@ -197,6 +207,15 @@ ul {
 
 .furniture__button {
   margin-top: auto;
+  width: 150px;
+  padding: 10px;
+  border: 1px solid rgb(30, 180, 180);
+  border-radius: 20px;
+  transition: opacity .3s;
+}
+
+.furniture__button:hover {
+  opacity: .5;
 }
 
 .form {
