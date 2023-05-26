@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/normalize.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <script defer src="tables.js"></script>
+  <script defer src="index.js"></script>
+  <script defer src="buttonUp.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo">
+        <img src="./img/logo.svg" alt="">
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">Столы</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Стулья</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Диваны</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Кровати</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <div class="btn-up btn-up_hide"></div>
+    <div id="wrap-form" class="wrap-form">
+      <form id="form" class="form">
+        <label class="form__label">
+          Укажите кол-во товаров:
+            <input value="1" class="form__input" id="count-item" type="number" placeholder="Колличество">
+          </label>
+            <div>
+          <p>Укажите цвет:</p>
+          <label class="form__label">
+            <input class="real-radio" type="radio" name="color" value="red">
+            <span class="costum-radio costum-radio--red"></span>
+            Красный
+          </label>
+          <label class="form__label">
+            <input class="real-radio" type="radio" name="color" value="blue">
+            <span class="costum-radio costum-radio--blue"></span>
+            Синий
+          </label>
+          <label class="form__label">
+            <input class="real-radio" type="radio" name="color" value="black">
+            <span class="costum-radio costum-radio--black"></span>
+            Черный
+          </label>
+        </div>
+        <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Ваш коментарий"></textarea>
+        <div class="wrap__button">
+          <button id="buy" type="submit" class="button">Купить</button>
+          <button class="button">Закрыть</button>
+        </div>
+      </form>
+    </div>
+    
+    <section class="section section-table">
+      <div class="container">
+        
+        <div class="furniture">
+          <ul id="tables" class="furniture__list">
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
