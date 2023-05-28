@@ -1,5 +1,7 @@
 const $tables = document.getElementById('tables')
 const $chairs = document.getElementById('chairs')
+const $sofas = document.getElementById('sofas')
+const $beds = document.getElementById('beds')
 
 const mapCards = (array, furniture) => {
   array.forEach(el => {
@@ -18,6 +20,8 @@ const mapCards = (array, furniture) => {
 
 mapCards(tables, $tables)
 mapCards(chairs, $chairs)
+mapCards(sofas, $sofas)
+mapCards(beds, $beds)
 
 function openForm() {
   document.getElementById('wrap-form').classList.add('active')

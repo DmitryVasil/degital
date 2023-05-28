@@ -35,24 +35,7 @@ const tables = [
     descr: 'стол 2',
     date: '2017-01-26'
   },
-  {
-    id: 7,
-    img: './img/table-1.jpg',
-    descr: 'стол 3',
-    date: '2017-01-26'
-  },
-  {
-    id: 8,
-    img: './img/table-1.jpg',
-    descr: 'стол 3',
-    date: '2017-01-26'
-  },
-  {
-    id: 9,
-    img: './img/table-1.jpg',
-    descr: 'стол 3',
-    date: '2017-01-26'
-  },
+ 
 ]
 
 // export default tables

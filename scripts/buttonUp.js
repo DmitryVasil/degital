@@ -1,4 +1,4 @@
-const btnUp = {
+const btnScrollUp = {
   el: document.querySelector('.btn-up'),
   scrolling: false,
   show() {
@@ -28,7 +28,7 @@ const btnUp = {
       }
       this.scrolling = false;
       // если пользователь прокрутил страницу более чем на 200px
-      if (scrollY > 200) {
+      if (scrollY > 100) {
         // сделаем кнопку .btn-up видимой
         this.show();
       } else {
@@ -50,4 +50,4 @@ const btnUp = {
   }
 }
 
-btnUp.addEventListener();
+btnScrollUp.addEventListener();
