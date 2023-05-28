@@ -8,7 +8,7 @@ const mapCards = (array, furniture) => {
     furniture.innerHTML += `
       <li id="${el.id}" class="furniture__item">
       <picture class="furniture__pict">
-        <img class="furniture__img" src="${el.img}">
+        <img class="furniture__img" src="${el.img}" alt="${el.descr}">
       </picture>
         <span class="furniture__descr">${el.descr}</span>
         <span class="furniture__descr">${getDayInfo(el.date)}</span>

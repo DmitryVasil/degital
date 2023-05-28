@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="./style/normalize.css">
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/media.css">
+
+  <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+
   <script defer src="scripts/tables.js"></script>
   <script defer src="scripts/chairs.js"></script>
   <script defer src="scripts/sofas.js"></script>
@@ -16,6 +21,7 @@
   <script defer src="scripts/index.js"></script>
   <script defer src="scripts/buttonUp.js"></script>
   <script defer src="scripts/form.js"></script>
+
   <title>Document</title>
 </head>
 <body>
@@ -34,18 +40,16 @@
       </nav>
       <a class="theme-toggle" href="#">
         <span class="theme-icon"></span>
-        <!-- <span class="theme-icon-light"></span>
-        <span class="theme-icon-dark"></span> -->
       </a>
     </div>
   </header>
-  
+
   <main>
     <div class="btn-up btn-up_hide"></div>
     <div id="wrap-form" class="wrap-form">
-      
+
     </div>
-    
+
     <section id="section-tables" class="section section-table">
       <div class="container">
         <div class="furniture">
@@ -79,7 +83,16 @@
   </main>
 
   <footer>
-
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#section-tables">Столы</a></li>
+          <li class="nav__item"><a class="nav__link" href="#section-chairs">Стулья</a></li>
+          <li class="nav__item"><a class="nav__link" href="#section-sofas">Диваны</a></li>
+          <li class="nav__item"><a class="nav__link" href="#section-beds">Кровати</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>

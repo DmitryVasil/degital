@@ -1,8 +1,3 @@
-// try {
-//   if (localStorage.getItem('theme') === 'dark')
-//       document.querySelector('html').classList.add('dark');
-// } catch (err) {}
-
 document.querySelector('.theme-toggle').addEventListener('click', (event) => {
   event.preventDefault();
   if (localStorage.getItem('theme') === 'dark') {
@@ -25,7 +20,6 @@ const addDarkTheme = () => {
       document.querySelector('html').classList.remove('dark');
       document.querySelector('.theme-toggle span').classList.remove('dark')
     }
-        
   } catch (err) {}
 }
 

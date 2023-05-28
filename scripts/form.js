@@ -23,10 +23,10 @@ document.getElementById('wrap-form').innerHTML = `
       Черный
     </label>
   </div>
-  <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Ваш коментарий"></textarea>
+  <textarea required class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Ваш коментарий"></textarea>
   <div class="wrap__button">
-    <button id="buy" type="submit" class="button">Купить</button>
-    <button id="clouse" class="button">Закрыть</button>
+    <button id="buy" type="submit" class="furniture__button">Купить</button>
+    <button id="clouse" class="furniture__button">Закрыть</button>
   </div>
   </form>
 `
@@ -38,5 +38,6 @@ document.getElementById('buy').addEventListener('click', (event) => {
 })
 
 document.getElementById('clouse').addEventListener('click', (event) => {
+  event.preventDefault()
   document.getElementById('wrap-form').classList.remove('active')
 })
